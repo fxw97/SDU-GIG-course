@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv('1.Huairou.csv')
+data = pd.read_csv('1.huairou.csv')
 # print(data)
 
 # 将时间列改为pandas可以识别的格式

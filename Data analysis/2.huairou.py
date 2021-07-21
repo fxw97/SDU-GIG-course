@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 读取数据
-data = pd.read_csv('1.Huairou.csv')
+data = pd.read_csv('1.huairou.csv')
 # print(data)
 
 # 更改时间分辨率之前，需要把时间列更改为pandas可以识别的时间格式，并设置为索引
