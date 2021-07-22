@@ -7,7 +7,7 @@ data = pd.read_csv('1.huairou.csv')
 data['time'] = pd.to_datetime(data['time'])
 
 # 将时间序列与对应的星期数一一对应
-data['dayofweek'] = data['time'].dt.dayofweek
+data['dayofweek'] = data['time'].dt.day_name()
 # print(data)
 
 # 将时间序列与对应的季度一一对应
@@ -25,5 +25,5 @@ data_month.to_csv('3.data_month.csv')
 
 # 季节变化数据：按季度分组求平均，并保存数据
 data_quarter = data.groupby('Q')[['PM2.5','PM10','SO2','NO2','CO','O3']].mean()
-print(data_quarter)
+# print(data_quarter)
 data_quarter.to_csv('3.data_quarter.csv')

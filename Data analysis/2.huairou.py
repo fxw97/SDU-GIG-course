@@ -23,3 +23,7 @@ data_1day.to_csv('2.huairou_1day.csv')
 data_1month = data.resample('1M').mean().to_period('M')
 # print(data_1month)
 data_1month.to_csv('2.huairou_1month.csv')
+
+# 更改时间分辨率为年，并保存
+data_year = data.resample('1Y').mean().to_period('Y')
+data_year.to_csv('2.huairou_year.csv')
