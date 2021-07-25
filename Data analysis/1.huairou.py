@@ -1,7 +1,7 @@
 # 导入pandas库
 import pandas as pd
 
-data = pd. read_csv('Huairou.csv')
+data = pd.read_csv('Huairou.csv')
 # print(data)
 # print(data.info())
 
