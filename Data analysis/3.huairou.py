@@ -24,6 +24,7 @@ data_month = data.groupby('month')[['PM2.5','PM10','SO2','NO2','CO','O3']].mean(
 data_month.to_csv('3.data_month.csv')
 
 # 季节变化数据：按季度分组求平均，并保存数据
-data_quarter = data.groupby('Q')[['PM2.5','PM10','SO2','NO2','CO','O3']].mean()
+data_quarter = dat
+a.groupby('Q')[['PM2.5','PM10','SO2','NO2','CO','O3']].mean()
 # print(data_quarter)
 data_quarter.to_csv('3.data_quarter.csv')
