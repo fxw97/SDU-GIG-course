@@ -27,7 +27,7 @@ plt.bar(x2,data.loc['2014'],width=0.15,label='2014year',alpha=0.8,color=colors[1
 plt.bar(x3,data.loc['2015'],width=0.15,label='2015year',alpha=0.8,color=colors[2])
 plt.bar(x4,data.loc['2016'],width=0.15,label='2016year',alpha=0.8,color=colors[3])
 plt.bar(x5,data.loc['2017'],width=0.15,label='2017year',alpha=0.8,color=colors[4])
-plt.xticks(range(6),['PM2.5','PM10','SO2','NO2','CO(×10)','O3'],fontsize=10)
+plt.xticks(range(6),['PM2.5','PM10','SO2','NO2','CO(×10)','O${_3}$'],fontsize=10)
 plt.yticks(fontsize=10)
 plt.ylabel('Concentration(μg·m-3)',fontsize=12)
 plt.grid(axis='y',alpha=0.5,linestyle='--')

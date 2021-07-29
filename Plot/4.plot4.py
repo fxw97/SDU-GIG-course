@@ -8,6 +8,7 @@ data = data.loc[:,'PM2.5':'O3']
 
 # 求个污染物浓度之间的相关性
 data_corr = data.corr()
+print(data_corr)
 
 # 绘制相关性热力图
 sns.heatmap(data_corr,cmap='jet',linewidths=0.5,vmin=-1,vmax=1,cbar_kws={'label':'Correlation values'},annot=True)
